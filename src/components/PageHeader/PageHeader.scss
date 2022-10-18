@@ -1,9 +1,15 @@
+@import 'src/fonts&colors/fonts&colors';
+
 .PageHeader {
-  background-color: darkblue;
+  width: 100%;
+  height: 4em;
+  margin: 0;
+  background-color: $lightPink;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 1em;
+  position: fixed;
 
   @media (min-width: 375px) {
     flex-direction: row;

@@ -3,5 +3,5 @@ import { Link } from 'react-router-dom';
 import './Logo.scss';
 
 export function Logo() {
-    return <Link className="Logo" to="/">LOGO</Link>;
+    return <Link className="Logo" to="/"><img src='./Logo2.jpg.png' /></Link>;
 }

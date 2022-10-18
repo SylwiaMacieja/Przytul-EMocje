@@ -1,16 +1,35 @@
+@import 'src/fonts&colors/fonts&colors';
+
 .Menu {
   list-style: none;
   margin: 0;
+  margin-right: 2em;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  align-items: center;
+  gap: 4em;
+  background-color: $lightPink;
+
+
+
 
   @media (min-width: 375px) {
     flex-direction: row;
   }
 
   &__item {
-    color: lightblue;
+    text-decoration: none;
+    font-family: $headingsFont;
+    font-size: $headingsFontSize;
+    color: $darkGrey;
+    background-color: $lightPink;
+
+    &:hover {
+      border-bottom: 0.1em solid $darkViolet;
+      font-size: 1.40em;
+      padding: 0.1em
+    }
+
   }
 }

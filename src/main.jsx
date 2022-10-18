@@ -5,7 +5,7 @@ import App from './components/App/App.jsx'
 
 
 
-import './index.scss'
+import './main.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
