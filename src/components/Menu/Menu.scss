@@ -1,0 +1,16 @@
+.Menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  @media (min-width: 375px) {
+    flex-direction: row;
+  }
+
+  &__item {
+    color: lightblue;
+  }
+}

@@ -1,0 +1,11 @@
+.PageHeader {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1em;
+
+  @media (min-width: 375px) {
+    flex-direction: row;
+  }
+}
