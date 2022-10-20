@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { PageHeader } from '../PageHeader/PageHeader.jsx';
 import './Layout.scss';
+import {PageFooter} from "../PageFooter/PageFooter";
 
 export function Layout() {
     return (
@@ -10,6 +11,7 @@ export function Layout() {
             <main className="Layout__main">
                 <Outlet />
             </main>
+            <PageFooter />
         </div>
     );
 }

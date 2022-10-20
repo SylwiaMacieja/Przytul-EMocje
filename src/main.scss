@@ -1,11 +1,16 @@
+@import"src/reset/reset";
+@import "src/fonts&colors/fonts&colors";
+
 @import "components/App/App";
-@import "components/EmotionButtons/EmotionButtons";
+@import "components/EmotionCards/EmotionCards";
+@import 'components/FormComponent/FormComponent';
 @import "components/Layout/Layout";
 @import "components/Logo/Logo";
 @import "components/Menu/Menu";
 @import "components/PageHeader/PageHeader";
-@import "./src/fonts&colors/fonts&colors";
+@import "components/PageFooter/PageFooter";
 
 
 
-@import"./src/reset/reset";
+
+

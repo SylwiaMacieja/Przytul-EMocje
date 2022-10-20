@@ -1,0 +1,83 @@
+@import "src/fonts&colors/fonts&colors";
+
+
+.wrapper {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.Card {
+  margin-top: 6em;
+  margin-bottom: 2em;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 20px lightgray;
+  //background-color: $lightPink;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  text-decoration: none;
+
+  &__image{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    padding: 1rem;
+    font-family: $headingsFont;
+    font-size: $headingsFontSize;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+
+  &__description {
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-family: $paragraphsFont;
+    font-size: calc( 0.75 * $primaryFontSize);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1rem;
+
+  }
+
+  &__btn {
+    padding: 1rem;
+    font-family: $paragraphsFont;
+    font-weight: 700;
+    font-size: calc( 0.75 * $primaryFontSize);
+    text-transform: uppercase;
+    margin: 1rem;
+    border: 2px solid $darkGreen;
+    background: transparent;
+    color: $darkGreen;
+    border-radius: 0.5rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    text-decoration: none;
+    text-align: center;
+
+  &:hover {
+    background-color: $darkGreen;
+    color: $white;
+
+  }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+
+
+}
