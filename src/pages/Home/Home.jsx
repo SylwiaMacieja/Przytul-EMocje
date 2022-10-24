@@ -16,7 +16,7 @@ export function Home() {
             </div>
 
             <div className='Home__img3'>
-                <NavLink className="Home__button3" to="/layout/oemocjach">O emocjach</NavLink>
+                <NavLink className="Home__button3" to="/oemocjach">O emocjach</NavLink>
             </div>
 
             <div className='Home__img4'>

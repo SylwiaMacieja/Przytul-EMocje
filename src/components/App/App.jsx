@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import './App.scss'
 import {Layout} from "../Layout/Layout";
+import {CuriosityDescription} from "../../pages/EmotionsPages/Curiosity/Curiosity";
 
 
 
@@ -22,12 +23,13 @@ function App () {
         <Router>
             <Routes>
                 <Route path='/' element={<Home/>} />
+                <Route path='/happiness' element={<HappinessDescription />} />
+                <Route path='/curiosity' element={<CuriosityDescription />} />
+                <Route path='/oemocjach' element={<AboutEmotions />} />
                 <Route path='/layout' element={<Layout/>} >
                     <Route path='/layout/form' element={<Form />} />
                     <Route path='/layout/notes' element={<Notes />} />
-                    <Route path='/layout/oemocjach' element={<AboutEmotions />} />
                     <Route path='/layout/losujemocje' element={<DrawEmotion />} />
-                    <Route path='/layout/happiness' element={<HappinessDescription />} />
                 </Route>
             </Routes>
         </Router>

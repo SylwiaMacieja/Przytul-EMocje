@@ -4,10 +4,35 @@ import './FormComponent.scss'
 
 
 const validate = form => {
+
     if(!form.name) {
         return'Imię jest wymagane'
-    } else if (form.name.lenght <= 2) {
+    } else if (form.name.length <= 2) {
         return 'Imie musi mieć więcej niż dwa znaki'
+    }
+    if(!form.surname) {
+        return'Nazwisko jest wymagane'
+    } else if (form.surname.length <= 2) {
+        return 'Nazwisko musi mieć więcej niż dwa znaki'
+    }
+    // if(!form.phone) {
+    //     return'Telefon jest wymagany'
+    // } else if (form.phone.length <= 8) {
+    //     return 'Telefon musi mieć 9 cyfr'
+    // }
+    // if(!form.email) {
+    //     return'Email jest wymagany'
+    // } else if (!form.email.includes('@')) {
+    //     return 'Zły format email'
+    // }
+    if(!form.q1) {
+        return'Odpowiedź na pytanie 1 jest wymagana'
+    }
+    if(!form.q2) {
+        return'Odpowiedź na pytanie 2 jest wymagana'
+    }
+    if(!form.q3) {
+        return'Odpowiedź na pytanie 3 jest wymagana'
     }
     return null
 }
@@ -17,7 +42,7 @@ export function FormComponent() {
     const [form, setForm] = useState({
         name: '',
         surname:'',
-        phone: '',
+        // phone: '',
         email: '',
         q1: '',
         q2: '',
@@ -40,49 +65,53 @@ export function FormComponent() {
             console.log('blad')
             return
         }
-        console.log('submitted',form)
+        alert(
+        `Podano następujące dane:
+        Imie i nazwisko: ${form.name} ${form.surname}
+        Email: ${form.email}
+        Pytanie 1: ${form.q1}
+        Pytanie 2: ${form.q2}
+        Pytanie 3: ${form.q3}`
+        );
+        console.log('submitted', form)
     }
 
     return (
-        <div className="Form__container">
-                {error && (<div>{error}</div>)}
-            {/*<div className="Form__info">Conajmniej 24h przed sesją wypełnij formularz. Jest to niezbędne do odbycia sesji. </div>*/}
+        <div className='Container'>
+            <div className='Form__header'>
+            <img src=''/>
+            <h1 className='Form__title'>Podróż w głąb siebie. </h1>
+            <p className='Form__description'>"Każdy człowiek doświadcza całego spektrum rozmaitych uczuć. I wszystkie one są ważne. Równie istotna jest świadomość, że do wszystkich uczuć mamy prawo. Czasem emocje, które nam towarzyszą mogą być niełatwe, a czasem sprzeczne, trudne do pogodzenia. Jak nauczyć się je rozpoznawać? Jak, dzięki pracom z emocjami, wzmocnić swój wewnętrzny potencjal i uczynić swoje życie lepszym? Wyrusz w podróż i podążaj ku lepszemu życiu." </p>
+                <p className='Form__info'>Zacznij od wypełnienia poniższego formularza conajmniej 24h przed sesją.</p>
+            </div>
 
-            <form className='Form' onSubmit={handleSubmit}>
+                <form className='Form' onSubmit={handleSubmit}>
 
-                <div className="Form_contact">
-                <label className='Form__label__contact'>Imię</label>
-                <input className='Form__input' type='text'  name='name' onChange={update}/>
+                <div className='Form__contact'>
+                    <textarea className='Form__input' type='text'  name='name' placeholder='Imię' onChange={update}/>
 
-                <label className='Form__label__contact'>Nazwisko</label>
-                <input className='Form__input' type='text'  name='surname' onChange={update}/>
+                    <textarea className='Form__input' type='text'  name='surname' placeholder='Nazwisko' onChange={update}/>
+                    {/*<label className='Form__label'>Nazwisko</label>*/}
 
-                <label className='Form__label__contact'>Telefon</label>
-                <input className='Form__input' type='text' placeholder=' xxx-xxx-xxx' name='phone' onChange={update}/>
-
-                <label className='Form__label__contact'>Email</label>
-                <input className='Form__input' type='text'  onChange={update}/>
+                    <textarea className='Form__input' type='text'  placeholder='Email' onChange={update}/>
+                    {/*<label className='Form__label'>Email</label>*/}
                 </div>
 
-                <div className="Form__questions">
-
-                <input className='Form__input__q' type='text' placeholder='Wpisz odpowiedź' name='q1' onChange={update}/>
-                    <label className='Form__label__questions'>Pytanie 1</label>
-
-                <input className='Form__input__q' type='text' placeholder='Wpisz odpowiedź' name='q2' onChange={update}/>
-                    <label className='Form__label__questions'>Pytanie 2</label>
+                <div className='Form__questions'>
+                    <textarea className='Form__input__q' type='text' placeholder='Wpisz odpowiedź' name='q1' onChange={update}/>
 
 
-                <input className='Form__input__q' type='text' placeholder='Wpisz odpowiedź' name='q3' onChange={update}/>
-                    <label className='Form__label__questions'>Pytanie 3</label>
+                    <textarea className='Form__input__q' type='text' placeholder='Wpisz odpowiedź' name='q2' onChange={update}/>
+                    {/*<label className='Form__label'>Pytanie 2</label>*/}
+
+                    <textarea className='Form__input__q' type='text' placeholder='Wpisz odpowiedź' name='q3' onChange={update}/>
+                    {/*<label className='Form__label'>Pytanie 3</label>*/}
                 </div>
 
                 <button className="Form__button" type='submit'>WYŚLIJ</button>
 
             </form>
-
-
-
+            {error && (<div className='Form__error'>{error}</div>)}
         </div>
     )
 }

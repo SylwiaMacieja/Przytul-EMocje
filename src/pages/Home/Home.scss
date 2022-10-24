@@ -1,61 +1,54 @@
 @import "src/fonts&colors/fonts&colors";
 
 .Home {
-  width: 100%vh;
-  height: 40em;
-  display: flex;
-  flex-direction: row;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   &__img1 {
-    width: 25%;
-    background-image: url("Img/girl-2987578_1920.jpg");
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url("./Img/girl-2987578_1920.jpg");
     background-size: cover;
     position: relative;
   }
-
-  &__button1 {
-    position:absolute;
-    align-self: center;
-    top: 16em;
-    left: 1.7em;
-    padding-top: 0.3em;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    text-align: center;
+  &__button1{
+    position: absolute;
+    top: 80%;
+    left: 20%;
     font-family: $headingsFont;
-    font-weight: 300;
+    font-size: calc( 1.6 * $headingsFontSize);
+    font-weight: 200;
     color: $white;
-    font-size: calc(1.5 * $headingsFontSize);
+    text-decoration: none;
     border-top: 0.01em solid $white;
+    padding: 0.3em;
+    text-align: center;
+    width: 8em;
 
-
+    &:hover {
+      transform: scale(1.1);
+    }
   }
+
+
   &__img2 {
-    width: 25%;
-    background-image: url("Img/book-5174879_1920.jpg");
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url("./Img/book-5174879_1920.jpg");
     background-size: cover;
     position: relative;
   }
-
-  &__button2 {
-    position:absolute;
-    align-self: center;
-    top: 16em;
-    left: 2.5em;
-    padding-top: 0.3em;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    text-align: center;
+  &__button2{
+    position: absolute;
+    top: 80%;
+    left: 20%;
     font-family: $headingsFont;
-    font-weight: 300;
+    font-size: calc( 1.6 * $headingsFontSize);
+    font-weight: 200;
     color: $white;
-    font-size: calc(1.5 * $headingsFontSize);
+    text-decoration: none;
     border-top: 0.01em solid $white;
+    padding: 0.3em;
+    text-align: center;
+    width: 8em;
 
     &:hover {
       transform: scale(1.1);
@@ -63,58 +56,53 @@
   }
 
   &__img3 {
-    width: 25%;
-    background-image: url("Img/woman-3758052_1920.jpg");
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url("./Img/woman-3758052_1920.jpg");
     background-size: cover;
+    position: relative;
   }
-
-  &__button3 {
-    position:absolute;
-    align-self: center;
-    top: 16em;
-    left: 21.5em;
-    padding-top: 0.3em;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    text-align: center;
+  &__button3{
+    position: absolute;
+    top: 80%;
+    left: 20%;
     font-family: $headingsFont;
-    font-weight: 300;
+    font-size: calc( 1.6 * $headingsFontSize);
+    font-weight: 200;
     color: $white;
-    font-size: calc(1.5 * $headingsFontSize);
+    text-decoration: none;
     border-top: 0.01em solid $white;
+    padding: 0.3em;
+    text-align: center;
+    width: 8em;
 
     &:hover {
       transform: scale(1.1);
     }
   }
-
   &__img4 {
-    width: 25%;
-    background-image: url("Img/young-woman-775342_1920.jpg");
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url("./Img/young-woman-775342_1920.jpg");
     background-size: cover;
+    position: relative;
   }
-
-  &__button4 {
-    position:absolute;
-    align-self: center;
-    top: 16em;
-    left: 30.5em;
-    padding-top: 0.3em;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    text-align: center;
+  &__button4{
+    position: absolute;
+    top: 80%;
+    left: 20%;
     font-family: $headingsFont;
-    font-weight: 300;
+    font-size: calc( 1.6 * $headingsFontSize);
+    font-weight: 200;
     color: $white;
-    font-size: calc(1.5 * $headingsFontSize);
+    text-decoration: none;
     border-top: 0.01em solid $white;
+    padding: 0.3em;
+    text-align: center;
+    width: 8em;
 
     &:hover {
       transform: scale(1.1);
     }
   }
+
 }
+

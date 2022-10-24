@@ -9,8 +9,8 @@
   flex-direction: column;
   padding: 1em;
   position: fixed;
-  background-image: linear-gradient($darkGreen, $white);
-  //box-shadow: 0px 0.2em 0.3em $darkGreen;
+  background-image: linear-gradient($white, $darkGreen);
+  //box-shadow: 0px 0.2em 0.3em $white;
 
 
   @media (min-width: 375px) {
