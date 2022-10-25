@@ -8,6 +8,14 @@ export function Note (props) {
         const changeDescription = () => {
                 setShowDescription(!showDescription);
         }
+
+        const editHandler = () => {
+                props.onEdit({
+                        title: props.title,
+                        description: props.description,
+                        id: props.id
+                });
+        }
         return (
             <div className='Note'>
                 <p onClick={changeDescription} className='Note__title'>{props.title}</p>
@@ -16,7 +24,7 @@ export function Note (props) {
                     )}
 
 
-                <button className="Note__button__edit">Edytuj</button>
+                <button onClick={editHandler} className="Note__button__edit">Edytuj</button>
                 <button className="Note__button__delete" onClick={() => props.onDelete(props.id)}>Usuń</button>
             </div>
         )

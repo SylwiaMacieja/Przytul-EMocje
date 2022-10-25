@@ -62,9 +62,9 @@
     font-size: calc( 0.75 * $primaryFontSize);
     text-transform: uppercase;
     margin-top: 1em;
-    border: 2px solid $darkGreen;
+    border: 2px solid $darkGrey;
     background: transparent;
-    color: $darkGreen;
+    color: $darkGrey;
     border-radius: 0.5em;
     transition: background 200ms ease-in, color 200ms ease-in;
     text-decoration: none;
@@ -72,8 +72,9 @@
     letter-spacing: 0.1em;
 
   &:hover {
-    background-color: $darkGreen;
-    color: $white;
+    background-color: $white;
+    color: $darkGreen;
+    border: $white;
 
   }
   }
