@@ -1,0 +1,90 @@
+@import "src/fonts&colors/fonts&colors";
+
+.Notes {
+  margin-top: 10em;
+
+  &__header {
+    margin: 2em;
+    font-family: $headingsFont;
+    font-size: calc(1.5 * $headingsFontSize);
+    font-weight: 200;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+  }
+}
+
+.Note {
+  background: $white;
+  margin: 2em 6em;
+  padding: 2em;
+  border: 0.1em solid $white;
+  //border-radius: 1em;
+
+  &__title {
+    font-family: $headingsFont;
+    font-size: calc(1.5 * $headingsFontSize);
+    font-weight: 200;
+    color: $darkGrey;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5em;
+  }
+
+  &__description {
+    font-family: $paragraphsFont;
+    font-size: $primaryFontSize;
+    font-weight: 300;
+    color: $darkGrey;
+  }
+
+  &__button {
+
+    &__edit {
+    width: 4em;
+    font-family: $headingsFont;
+    font-size: $primaryFontSize;
+    font-weight: 300;
+    color: $darkGreen;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    border: 0.1em solid $darkGreen;
+
+      &:hover {
+        font-weight: 700;
+        color: $white;
+        background: $darkGreen;
+        transform: scale(1.1);
+      }
+    }
+
+
+
+    &__delete {
+      width: 4em;
+      font-family: $headingsFont;
+      font-size: $primaryFontSize;
+      font-weight: 300;
+      color: $darkGreen;
+      text-transform: uppercase;
+      padding: 0.5em;
+      margin-top: 1.5em;
+      margin-right: 1em;
+      border: 0.1em solid $darkGreen;
+
+      &:hover {
+        font-weight: 700;
+        color: $white;
+        background: $darkGreen;
+        transform: scale(1.1);
+      }
+
+    }
+
+  }
+
+}

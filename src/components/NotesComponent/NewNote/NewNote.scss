@@ -1,0 +1,73 @@
+@import "src/fonts&colors/fonts&colors";
+
+.NoteNew {
+  background: $white;
+  margin: 2em 6em;
+  padding: 2em;
+  border: 0.1em solid $white;
+  display: flex;
+  flex-direction: column;
+  //border-radius: 1em;
+
+  &__title {
+    font-family: $headingsFont;
+    font-size: $headingsFontSize;
+    font-weight: 200;
+    color: $darkGrey;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  &__description {
+    font-family: $paragraphsFont;
+    font-size: $primaryFontSize;
+    font-weight: 300;
+    color: $darkGrey;
+    border: 0.002em solid $darkGreen;
+  }
+
+  &__button {
+
+    &__add {
+      width: 8em;
+      font-family: $headingsFont;
+      font-size: $primaryFontSize;
+      font-weight: 300;
+      color: $darkGreen;
+      text-transform: uppercase;
+      padding: 0.5em;
+      margin-top: 1em;
+      margin-right: 1em;
+      border: 0.1em solid $darkGreen;
+
+      &:hover {
+        font-weight: 700;
+        color: $white;
+        background: $darkGreen;
+        transform: scale(1.1);
+      }
+    }
+
+    &__new {
+      width: 9em;
+      font-family: $headingsFont;
+      font-size: $primaryFontSize;
+      font-weight: 300;
+      color: $darkGreen;
+      text-transform: uppercase;
+      padding: 0.5em;
+      margin-top: 1em;
+      margin-left: 6em;
+      border: 0.1em solid $white;
+
+      &:hover {
+        font-weight: 700;
+        color: $white;
+        background: $darkGreen;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
