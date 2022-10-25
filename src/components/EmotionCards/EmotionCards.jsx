@@ -8,6 +8,21 @@ import love from './Img/love1sq.jpg'
 import trust from './Img/trust1sq.jpg'
 import lonelisness from './Img/loneliness2sq.jpg'
 
+
+export function EmotionCards (props) {
+    return (
+        <div className="Card">
+            <div className="Card__body">
+                <img src={props.img} className="Card__image"/>
+                <h2 className="Card__title">{props.title}</h2>
+                <p className='Card__description'>{props.description}</p>
+            </div>
+            <NavLink className='Card__btn' to={props.to}>Przyjrzyj się emocji </NavLink>
+        </div>
+    )
+}
+
+
 export function Happiness () {
     return (
         <div>
@@ -97,16 +112,5 @@ export function Loneliness () {
 
 
 
-export function EmotionCards (props  ) {
-    return (
-     <div className="Card">
-        <div className="Card__body">
-            <img src={props.img} className="Card__image"/>
-            <h2 className="Card__title">{props.title}</h2>
-            <p className='Card__description'>{props.description}</p>
-        </div>
-         <NavLink className='Card__btn' to={props.to}>Przyjrzyj się emocji </NavLink>
-     </div>
-    )
-}
+
 

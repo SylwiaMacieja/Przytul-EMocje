@@ -1,11 +1,11 @@
 import React from 'react';
-import { Logo } from '../Logo/Logo.jsx';
+import {LogoGreen} from '../Logo/Logo.jsx';
 
 
 export function PageFooter() {
     return (
         <footer className="PageFooter">
-            <Logo/>
+            <LogoGreen/>
         </footer>
     );
 }

@@ -1,0 +1,12 @@
+@import "src/fonts&colors/fonts&colors";
+
+.DrawEmotion {
+  font-family: $headingsFont;
+  font-size:  calc(1.1 * $headingsFontSize);
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  line-height: 1.2em;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 10em;
+}

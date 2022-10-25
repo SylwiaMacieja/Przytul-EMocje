@@ -4,16 +4,8 @@ import './DrawEmotionButton.scss'
 
 export function DrawEmotionButton(){
     return(
-        <div>
-
-            <Popup trigger={<button> Radość</button>}>
-                <div>RADOŚĆ</div>
-                <div>OPIS RADOŚCI</div>
-                <div>OPIS RADOŚCI</div>
-                <div>OPIS RADOŚCI</div>
-                <div>OPIS RADOŚCI</div>
-
-            </Popup>
+        <div className='DrawEmotion'>
+            Strona w przebudowie. Zapraszamy wkrótce.
         </div>
     )
 };
