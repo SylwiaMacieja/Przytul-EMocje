@@ -13,9 +13,9 @@ export function AboutEmotions() {
         <div className='wrapper'>
             <Curiosity />
             <Love />
-           <Happiness />
-            <Loneliness />
+            <Happiness />
             <Sadness />
+            <Loneliness />
             <Madness />
             <Trust />
         </div>

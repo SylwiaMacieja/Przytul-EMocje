@@ -21,7 +21,9 @@ export function NewNote(props) {
     const addNote = () => {
         const note = {
             title: title,
-            description: desc
+            description: desc,
+            id: props.id,
+            key: props.id
         };
         props.onAdd(note);
 
@@ -38,10 +40,14 @@ export function NewNote(props) {
             <input className='NoteNew__description'
                    type='text'
                    value={title}
+                    id={props.id}
+                   key={props.id}
                    onChange={handleTitle}/>
             <label className='NoteNew__title'>Opis:</label>
             <textarea className='NoteNew__description'
                       value={desc}
+                      id={props.id}
+                      key={props.id}
                       onChange={handleDescription}/>
             <button className='NoteNew__button__add'
                     onClick={addNote}>Dodaj notatkę</button>

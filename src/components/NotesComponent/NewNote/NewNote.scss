@@ -71,3 +71,23 @@
     }
   }
 }
+
+.NoteNew__button__modal {
+  width: 6em;
+  font-family: $headingsFont;
+  font-size: calc(0.8 * $primaryFontSize);
+  font-weight: 300;
+  color: $darkGreen;
+  text-transform: uppercase;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-left: 10em;
+  border: 0.1em solid $darkGreen;
+
+  &:hover {
+    font-weight: 700;
+    color: $white;
+    background: $darkGreen;
+    transform: scale(1.1);
+  }
+}

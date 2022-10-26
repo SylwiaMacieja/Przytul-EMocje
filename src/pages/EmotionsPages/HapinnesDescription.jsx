@@ -1,6 +1,6 @@
 import React from "react";
-import {EmotionsPagesComponent} from "../EmotionsPagesLayout.jsx";
-import {PageFooter} from "../../../components/PageFooter/PageFooter.jsx";
+import {EmotionsPagesComponent} from "./Layout/EmotionsPagesLayout.jsx";
+import {PageFooter} from "../../components/PageFooter/PageFooter.jsx";
 
 
 export function HappinessDescription() {

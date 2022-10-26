@@ -62,21 +62,20 @@
     font-size: calc( 0.75 * $primaryFontSize);
     text-transform: uppercase;
     margin-top: 1em;
-    border: 2px solid $darkGrey;
+    border-top: 0.1px solid $darkGrey;
     background: transparent;
     color: $darkGrey;
-    border-radius: 0.5em;
+    //border-radius: 0.5em;
     transition: background 200ms ease-in, color 200ms ease-in;
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.1em;
+    //margin-bottom: 1em;
 
-  &:hover {
-    background-color: $white;
-    color: $darkGreen;
-    border: $white;
-
-  }
+  //&:hover {
+  ////transform: scale(1.2);
+  //
+  //}
   }
 
   &:hover {

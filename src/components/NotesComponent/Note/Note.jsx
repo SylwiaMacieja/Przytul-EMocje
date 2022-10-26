@@ -5,7 +5,7 @@ export function Note (props) {
 
         const [showDescription, setShowDescription] = useState(true);
 
-        const changeDescription = () => {
+        const hideDescription = () => {
                 setShowDescription(!showDescription);
         }
 
@@ -18,7 +18,7 @@ export function Note (props) {
         }
         return (
             <div className='Note'>
-                <p onClick={changeDescription} className='Note__title'>{props.title}</p>
+                <p onClick={hideDescription} className='Note__title'>{props.title}</p>
                     { showDescription && (
                     <div className='Note__description'>{props.description}</div>
                     )}

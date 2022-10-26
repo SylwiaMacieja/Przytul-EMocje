@@ -2,13 +2,18 @@
 @import "src/fonts&colors/fonts&colors";
 
 @import "components/App/App";
+@import "components/DrawEmotionButton/DrawEmotionButton";
 @import "components/EmotionCards/EmotionCards";
 @import 'components/FormComponent/FormComponent';
 @import "components/Layout/Layout";
 @import "components/Logo/Logo";
 @import "components/Menu/Menu";
+@import "components/NotesComponent/NotesComponent";
 @import "components/PageHeader/PageHeader";
 @import "components/PageFooter/PageFooter";
+
+@import 'pages/EmotionsPages/Layout/EmotionsPagesLayout';
+
 
 
 

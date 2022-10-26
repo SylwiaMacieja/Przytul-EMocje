@@ -1,7 +1,7 @@
 import React from "react";
-import {EmotionsPagesComponent} from "../EmotionsPagesLayout.jsx";
-import {PageFooter} from "../../../components/PageFooter/PageFooter";
-import './Curiosity.scss';
+import {EmotionsPagesComponent} from "./Layout/EmotionsPagesLayout.jsx";
+import {PageFooter} from "../../components/PageFooter/PageFooter.jsx";
+
 
 
 

@@ -26,7 +26,7 @@ export class  NotesComponent extends Component {
                 }
             ],
             showEditModal: false,
-            editNote: {}
+            editNote: {},
         }
     }
 
@@ -43,7 +43,7 @@ export class  NotesComponent extends Component {
 
     editNote(note) {
         const notes = [...this.state.notes];
-        const index = notes.findIndex(item => item.id === note);
+        const index = notes.findIndex(item => item.id === note.id);
         if (index >= 0) {
             notes[index] = note;
             this.setState({notes});
@@ -71,13 +71,14 @@ export class  NotesComponent extends Component {
 
                     <Modal
                         isOpen={this.state.showEditModal}
+                        ariaHideApp={false}
                         contentLabel='Edytuj notatkę'>
                         <EditNote
                             title={this.state.editNote.title}
                             description={this.state.editNote.description}
                             id={this.state.editNote.id}
-                        onEdit={note => this.editNote(note)}/>
-                        <button
+                            onEdit={note => this.editNote(note)}/>
+                        <button className='NoteNew__button__modal'
                             onClick={() => this.toggleModal()}>Anuluj</button>
                     </Modal>
 

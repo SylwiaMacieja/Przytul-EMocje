@@ -17,7 +17,7 @@ export function EmotionCards (props) {
                 <h2 className="Card__title">{props.title}</h2>
                 <p className='Card__description'>{props.description}</p>
             </div>
-            <NavLink className='Card__btn' to={props.to}>Przyjrzyj się emocji </NavLink>
+            <NavLink className='Card__btn' to={props.to}>Przyjrzyj się emocji</NavLink>
         </div>
     )
 }
@@ -42,7 +42,8 @@ export function Madness () {
             <EmotionCards
                 img={madness1sq}
                 title="Wściekłość"
-                description='Stan emocjonalny, który wyraża w świadomości uczucie całkowitego spełnienia. Jest synonimem szczęścia w rozumieniu potocznym towarzyszącym zabawie, zadowoleniu lub satysfakcji z przeżywanych doznań, wykonywanych czynności lub przywoływanych w pamięci wspomnień. '
+                description='Skrajne wzburzenie i pobudzenie, spowodowane gniewem i złością, wyrażające się zwykle w postaci krzyku, gwałtownych ruchów, ekspresyjnej mimiki i napięcia ciała. Wściekłość charakteryzuje fizyczne pobudzenie, które może wymykać się już naszej kontroli. To stan, w którym prawie nie docierają do nas racjonalne argumenty, jesteśmy na nie głusi i ślepi.'
+                to='/madness'
             />
         </div>
     )
@@ -53,7 +54,8 @@ export function Sadness () {
             <EmotionCards
                 img={sadness}
                 title="Smutek"
-                description='Stan emocjonalny, który wyraża w świadomości uczucie całkowitego spełnienia. Jest synonimem szczęścia w rozumieniu potocznym towarzyszącym zabawie, zadowoleniu lub satysfakcji z przeżywanych doznań, wykonywanych czynności lub przywoływanych w pamięci wspomnień. '
+                description='Pojawia się wówczas, kiedy czegoś nam brak. Jest to uczucie miękkie, które czyni nas słabszymi, a nie silniejszymi. Wycisza, a nie motywuje do działania. Spowalnia, osłabia, kieruje uwagę do wewnątrz, a nie na zewnątrz. Jest uczuciem, które może trafiać głęboko, duchowo uszlachetniać. Raczej nie wzburza do agresywnych zachowań.'
+                to='/sadness'
             />
         </div>
     )
@@ -78,7 +80,8 @@ export function Love () {
                 <EmotionCards
                     img={love}
                     title="Miłość"
-                    description='Stan emocjonalny, który wyraża w świadomości uczucie całkowitego spełnienia. Jest synonimem szczęścia w rozumieniu potocznym towarzyszącym zabawie, zadowoleniu lub satysfakcji z przeżywanych doznań, wykonywanych czynności lub przywoływanych w pamięci wspomnień. '
+                    description='Kiedy otrzymujemy miłość, podwyższa to nasze poczucie własnej wartości, przynosi spełnienie może zaspokoić głód (miłości). Możemy poczuć wtedy uniesienie, błogość, radość, satysfakcję, triumf. Miłość bywa mylona z zakochaniem lub pożądaniem, tymczasem to poczucie trwania z kimś w silnej i głębokiej więzi emocjonalnej duchowej.'
+                    to='/love'
                 />
             </div>
     )
@@ -90,7 +93,8 @@ export function Trust () {
             <EmotionCards
                 img={trust}
                 title="Zaufanie"
-                description='Stan emocjonalny, który wyraża w świadomości uczucie całkowitego spełnienia. Jest synonimem szczęścia w rozumieniu potocznym towarzyszącym zabawie, zadowoleniu lub satysfakcji z przeżywanych doznań, wykonywanych czynności lub przywoływanych w pamięci wspomnień. '
+                description='Jest podstawą wszelkich międzyludzkich więzi i umów: związków, ale też umów społecznych oraz działalności instytucji. To przekonanie, że ktoś lub coś jest wobec nas uczciwe. Wiara, wiedza lub nadzieja (oparta na pewnych przesłankach), że dana sytuacja rozwinie się tak, jak tego pragniemy lub że dana osoba zachowa się tak, jak byśmy tego od niej oczekiwali.'
+                to='/trust'
             />
         </div>
     )
@@ -100,8 +104,9 @@ export function Loneliness () {
         <div>
             <EmotionCards
                 img={lonelisness}
-                title="Samotność"
+                title="Tęsknota"
                 description='Stan emocjonalny, który wyraża w świadomości uczucie całkowitego spełnienia. Jest synonimem szczęścia w rozumieniu potocznym towarzyszącym zabawie, zadowoleniu lub satysfakcji z przeżywanych doznań, wykonywanych czynności lub przywoływanych w pamięci wspomnień. '
+                to='/loneliness'
             />
         </div>
     )
