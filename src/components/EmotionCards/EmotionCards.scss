@@ -1,8 +1,6 @@
 @import "src/fonts&colors/fonts&colors";
 
-
 .wrapper {
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 16em));
   gap: 1em;
@@ -10,19 +8,15 @@
 }
 
 .Card {
-
   width: 100%;
   overflow: hidden;
-  //box-shadow: 0 2px 20px lightgray;
-  //background-color: $lightPink;
-  //border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
   text-decoration: none;
-  //background-color: $darkGrey;
+
 
   &__image{
     padding-top: 2em;
@@ -41,7 +35,6 @@
     letter-spacing: 0.4em;
     text-align: center;
     border-bottom: .03em solid $darkGrey;
-
   }
 
   &__description {

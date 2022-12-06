@@ -5,105 +5,53 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  &__img1 {
+  &__img1,
+  &__img2,
+  &__img3,
+  &__img4 {
     height: 100vh;
-    background-image: url("./Img/girl-2987578_1920.jpg");
     background-size: cover;
     position: relative;
   }
-  &__button1{
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    font-family: $headingsFont;
-    font-size: calc( 1.6 * $headingsFontSize);
-    font-weight: 200;
-    color: $white;
-    text-decoration: none;
-    border-top: 0.01em solid $white;
-    padding: 0.3em;
-    text-align: center;
-    width: 8em;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+  &__img1 {
+    background-image: url("./Img/girl-2987578_1920.jpg");
   }
-
 
   &__img2 {
-    height: 100vh;
     background-image: url("./Img/book-5174879_1920.jpg");
-    background-size: cover;
-    position: relative;
-  }
-  &__button2{
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    font-family: $headingsFont;
-    font-size: calc( 1.6 * $headingsFontSize);
-    font-weight: 200;
-    color: $white;
-    text-decoration: none;
-    border-top: 0.01em solid $white;
-    padding: 0.3em;
-    text-align: center;
-    width: 8em;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   &__img3 {
-    height: 100vh;
     background-image: url("./Img/woman-3758052_1920.jpg");
-    background-size: cover;
-    position: relative;
   }
-  &__button3{
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    font-family: $headingsFont;
-    font-size: calc( 1.6 * $headingsFontSize);
-    font-weight: 200;
-    color: $white;
-    text-decoration: none;
-    border-top: 0.01em solid $white;
-    padding: 0.3em;
-    text-align: center;
-    width: 8em;
 
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
   &__img4 {
-    height: 100vh;
     background-image: url("./Img/young-woman-775342_1920.jpg");
-    background-size: cover;
-    position: relative;
   }
-  &__button4{
+
+
+  &__button1,
+  &__button2,
+  &__button3,
+  &__button4 {
     position: absolute;
     top: 80%;
-    left: 20%;
+    left: 10%;
     font-family: $headingsFont;
-    font-size: calc( 1.6 * $headingsFontSize);
+    font-size: calc(1.6 * $headingsFontSize);
     font-weight: 200;
     color: $white;
     text-decoration: none;
     border-top: 0.01em solid $white;
     padding: 0.3em;
     text-align: center;
-    width: 8em;
+    width: 80%;
 
     &:hover {
       transform: scale(1.1);
     }
   }
-
 }
+
 
