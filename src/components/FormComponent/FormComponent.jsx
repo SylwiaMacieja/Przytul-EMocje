@@ -90,7 +90,7 @@ export function FormComponent() {
                         Czasem emocje, które nam towarzyszą mogą być niełatwe, a czasem sprzeczne, trudne do pogodzenia.
                         Jak nauczyć się je rozpoznawać? Jak, dzięki pracom z emocjami, wzmocnić swój wewnętrzny
                         potencjal i uczynić swoje życie lepszym? Wyrusz w podróż i podążaj ku lepszemu życiu." </p>
-                    <p className='Form__info'>Zacznij od wypełnienia poniższego formularza conajmniej 24h przed
+                    <p className='Form__info'>Zacznij od wypełnienia poniższego formularza co najmniej 24h przed
                         sesją.</p>
                 </div>
 
@@ -106,9 +106,7 @@ export function FormComponent() {
                         <textarea className='Form__input' type='text' name='phone' placeholder='Telefon: xxx xxx xxx'
                                   onChange={update}/>
                         {/*<label className='Form__label'>Email</label>*/}
-                    </div>
 
-                    <div className='Form__questions'>
                         <textarea className='Form__input__q' type='text' placeholder='Pytanie 1' name='q1'
                                   onChange={update}/>
 

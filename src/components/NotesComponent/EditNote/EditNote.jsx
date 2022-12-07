@@ -37,7 +37,6 @@ export function EditNote (props) {
                       onChange={handleDescription}/>
             <button className='NoteNew__button__add'
                     onClick={() => editNote()}>Zapisz zmiany</button>
-
         </div>
     )
 }

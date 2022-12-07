@@ -1,10 +1,12 @@
 import React from "react";
 import './EmotionsPagesLayout.scss'
+import {NavLink} from "react-router-dom";
 
 
 export function EmotionsPagesComponent (props) {
 
     return (
+        <>
         <div className="Emotion">
             <h1 className='Emotion__title'>{props.emotionTitle}</h1>
             <p className='Emotion__descriptionMain'>{props.emotionDescMain}</p>
@@ -16,5 +18,7 @@ export function EmotionsPagesComponent (props) {
             <p className='Emotion__description'>{props.emotionTask3}</p>
             <p className='Emotion__source'>{props.emotionSource}</p>
         </div>
+            <NavLink to="/oemocjach" className="Emotion__btn__back">Wróć do bloga</NavLink>
+        </>
     )
 }

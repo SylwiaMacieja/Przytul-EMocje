@@ -57,6 +57,15 @@ body {
     margin-left: 14em;
     margin-bottom: 0;
   }
-
-
+  &__btn__back {
+    width: 100%;
+    text-decoration: none;
+    font-family: $headingsFont;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: $darkGrey;
+    color: $white;
+    margin-top: 4em;
+  }
 }
+
