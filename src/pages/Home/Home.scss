@@ -2,8 +2,15 @@
 
 
 .Home {
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 25%));
+
+  @media (max-width: 768px) {
+    display: block;
+    height: 100vh;
+
+  }
 
   &__img1,
   &__img2,
