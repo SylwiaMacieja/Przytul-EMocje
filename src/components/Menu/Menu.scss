@@ -2,17 +2,18 @@
 
 .Menu {
   list-style: none;
-  margin: 0;
-  margin-right: 10em;
+  margin-right: 5em;
   padding: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 4em;
 
 
-  @media (min-width: 390px) {
-    flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5em;
+    margin-bottom: 1em;
   }
 
   &__item {
@@ -24,12 +25,21 @@
     color: $darkGrey;
     text-transform: uppercase;
 
+    @media (max-width: 768px) {
+      font-size: calc(0.65 * $headingsFontSize);
+    }
+
+
     &:hover {
       border-top: 0.3em solid $darkGrey;
       color: $darkGrey;
       font-weight: 700;
       padding: 0.3em;
       padding-top: 1.43em;
+
+      @media (max-width: 768px) {
+      border: none;
+      }
     }
 
   }

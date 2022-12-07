@@ -6,13 +6,13 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   padding: 1em;
   position: fixed;
   background-image: linear-gradient($white, $darkGreen);
 
 
-  @media (min-width: 375px) {
-    flex-direction: row;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    height: auto;
   }
 }

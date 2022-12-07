@@ -4,10 +4,10 @@
 .Home {
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 25%));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 25%));
 
   @media (max-width: 768px) {
-    display: block;
+    display: inline-block;
     height: 100vh;
 
   }
